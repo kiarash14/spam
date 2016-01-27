@@ -1,10 +1,16 @@
 do
 
 function run(msg, matches)
-  return 'Telegram Bot '.. VERSION .. [[ 
-  Checkout https://github.com/pAyDaAr/Iranian_Bot
-  GNU GPL v2 license.
-  @Amir_PaydaaR for more info.]]
+  return 'Telegram Bot '.. VERSION .. [[spam bumper v2
+  id bot spam:
+  @spmbumper
+  id bot antispam:
+  @telebumper
+  id channel: 
+  @bumperchannel
+  
+  group:
+  https://telegram.me/joinchat/CeP13gZEGsN_TOms2EB7Zg
 end
 
 return {
