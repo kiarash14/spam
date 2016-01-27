@@ -23,9 +23,9 @@ end
 
 return {
   description = "Calculate math expressions with mathjs API",
-  usage = "!calc [expression]: evaluates the expression and sends the result.",
+  usage = "c [expression]: evaluates the expression and sends the result.",
   patterns = {
-    "^!calc (.*)$"
+    "^c (.*)$"
   },
   run = run
 }
