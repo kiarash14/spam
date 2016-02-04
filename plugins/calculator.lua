@@ -5,10 +5,10 @@ local function mathjs(exp)
   url = url..'?expr='..URL.escape(exp)
   local b,c = http.request(url)
   local text = nil
-  if  == 200 then
+  if c == 200 then
     text = 'Result: '..b
   
-  elseif  == 400 then
+  elseif c == 400 then
     text = b
   else
     text = 'Unexpected error\n'
@@ -23,9 +23,9 @@ end
 
 return {
   description = "Calculate math expressions with mathjs API",
-  usage = "[expression]: evaluates the expression and sends the result.",
+  usage = "![expression]: evaluates the expression and sends the result.",
   patterns = {
-    "^ (.*)$"
+    "^! (.*)$"
   },
   run = run
 }
